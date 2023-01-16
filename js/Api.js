@@ -14,15 +14,17 @@ for (let data of search){
     container.innerHTML += `<ul>
 
    
-    <li>${data.Title}</li>
-    <li>${data.Year}</li>
-    <li>${data.imdbID}</li>
-    <li>${data.Type}</li>
+    <li>Title: ${data.Title}</li>
+    <li>Year: ${data.Year}</li>
+    <li>ID: ${data.imdbID}</li>
+    <li>Type: ${data.Type}</li>
     <img src = ${data.Poster}>
     </ul>`
+
+    
 }
 
 } catch (error) {
-    console.log(error);
+  //  console.log(error);
 }
 })
